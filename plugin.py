@@ -11,7 +11,7 @@ import supybot.utils as utils
 from supybot.commands import *
 import supybot.commands
 import supybot.plugins as plugins
-import supybot.ircutils as ircutils #wrap!!#
+import supybot.ircutils as ircutils
 import supybot.callbacks as callbacks
 
 

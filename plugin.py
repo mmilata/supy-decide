@@ -34,7 +34,7 @@ class Decide(callbacks.Plugin):
         rg = random.Random(str(time_quotient)+text.replace(' ', ''))
 
         choices = text.split(conf.supybot.plugins.Decide.separator())
-        choices = list(map(lambda s: s.strip(), choices))
+        choices = [s.strip() for s in choices]
 
         if len(choices) == 1:
             choices = ['Yes', 'No']
